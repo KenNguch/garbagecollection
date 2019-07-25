@@ -1,6 +1,6 @@
 <?php
 	$dbServer = 'us-cdbr-iron-east-02.cleardb.net';
-	$dtruckername = 'b1ba6b6cee86e7';
+	$dbUsername = 'b1ba6b6cee86e7';
 	$dbPassword = '6b75b8d6';
 	$dbDatabase = 'heroku_28c866c0cec52d8';
 

@@ -1,6 +1,6 @@
 <?php
 	$dbServer = 'localhost';
-	$dtruckername = 'root';
+	$dbUsername = 'root';
 	$dbPassword = '';
 	$dbDatabase = 'truckbooking';
 

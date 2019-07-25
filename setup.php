@@ -33,7 +33,7 @@
 	}
 
 	function isEmail($email){
-		if(preg_match('/^([*+!.&#$¦\'\\%\/0-9a-z^_`{}=?~:-]+)@(([0-9a-z-]+\.)+[0-9a-z]{2,45})$/i', $email)){
+		if(preg_match('/^([*+!.&#$ï¿½\'\\%\/0-9a-z^_`{}=?~:-]+)@(([0-9a-z-]+\.)+[0-9a-z]{2,45})$/i', $email)){
 			return $email;
 		}else{
 			return FALSE;
@@ -142,7 +142,7 @@
 		/* attempt to save db config file */
 		$new_config = array(
 			'dbServer' => undo_magic_quotes($db_server),
-			'dtruckername' => undo_magic_quotes($db_username),
+			'dbUsername' => undo_magic_quotes($db_username),
 			'dbPassword' => undo_magic_quotes($db_password),
 			'dbDatabase' => undo_magic_quotes($db_name),
 

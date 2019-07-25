@@ -298,7 +298,7 @@
 			static $connected = false, $db_link;
 
 			$dbServer = config('dbServer');
-			$dtruckername = config('dtruckername');
+			$dbUsername = config('dbUsername');
 			$dbPassword = config('dbPassword');
 			$dbDatabase = config('dbDatabase');
 
@@ -316,7 +316,7 @@
 					$e=ob_get_contents(); ob_end_clean(); if($o['silentErrors']){ $o['error']=$e; return FALSE; }else{ echo $e; exit; }
 				}
 
-				if(!($db_link = @db_connect($dbServer, $dtruckername, $dbPassword))){
+				if(!($db_link = @db_connect($dbServer, $dbUsername, $dbPassword))){
 					echo Notification::placeholder();
 					echo Notification::show(array(
 						'message' => db_error($db_link, true),

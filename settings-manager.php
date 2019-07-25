@@ -28,7 +28,7 @@
 
 		$config_array = array(
 			'dbServer' => $dbServer,
-			'dtruckername' => $dtruckername,
+			'dbUsername' => $dbUsername,
 			'dbPassword' => $dbPassword,
 			'dbDatabase' => $dbDatabase,
 			'adminConfig' => $adminConfig
@@ -55,7 +55,7 @@
 
 		$new_config = "<?php\n" . 
 			"\t\$dbServer = '" . addslashes($config_array['dbServer']) . "';\n" .
-			"\t\$dtruckername = '" . addslashes($config_array['dtruckername']) . "';\n" .
+			"\t\$dbUsername = '" . addslashes($config_array['dbUsername']) . "';\n" .
 			"\t\$dbPassword = '" . addslashes($config_array['dbPassword']) . "';\n" .
 			"\t\$dbDatabase = '" . addslashes($config_array['dbDatabase']) . "';\n" .
 
@@ -84,7 +84,7 @@
 
 		$default_config = array(
 			'dbServer' => '',
-			'dtruckername' => '',
+			'dbUsername' => '',
 			'dbPassword' => '',
 			'dbDatabase' => '',
 
@@ -126,7 +126,7 @@
 			$config['dbServer'] = $dbServer;
 			$config['dbDatabase'] = $dbDatabase;
 			$config['dbPassword'] = $dbPassword;
-			$config['dtruckername'] = $dtruckername;
+			$config['dbUsername'] = $dbUsername;
 			$config['adminConfig'] = $adminConfig;
 		}
 

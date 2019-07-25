@@ -387,14 +387,14 @@
 		 *  @details Uses mysqldump (if available) to create a new backup file
 		 */
 		public function create_backup(){
-			$config = array('dbServer' => '', 'dtruckername' => '', 'dbPassword' => '', 'dbDatabase' => '');
+			$config = array('dbServer' => '', 'dbUsername' => '', 'dbPassword' => '', 'dbDatabase' => '');
 			foreach($config as $k => $v) $config[$k] = escapeshellarg(config($k));
 
 			$dump_file = $this->curr_dir . '/backups/' . md5(microtime()) . '.sql';
 			$out = array(); $ret = 0;
 			maintenance_mode(true);
 			$pass_param = ($config['dbPassword'] ? "-p{$config['dbPassword']}" : '');
-			@exec("(mysqldump -u{$config['dtruckername']} {$pass_param} -h{$config['dbServer']} {$config['dbDatabase']} > {$dump_file}) 2>&1", $out, $ret);
+			@exec("(mysqldump -u{$config['dbUsername']} {$pass_param} -h{$config['dbServer']} {$config['dbDatabase']} > {$dump_file}) 2>&1", $out, $ret);
 			$this->backup_log = implode("\n", $out);
 			maintenance_mode(false);
 
@@ -414,12 +414,12 @@
 			$bfile = $this->get_specified_backup_file();
 			if(!$bfile) return false;
 
-			$config = array('dbServer' => '', 'dtruckername' => '', 'dbPassword' => '', 'dbDatabase' => '');
+			$config = array('dbServer' => '', 'dbUsername' => '', 'dbPassword' => '', 'dbDatabase' => '');
 			foreach($config as $k => $v) $config[$k] = config($k);
 
 			$out = $ret = null;
 			maintenance_mode(true);
-			$cmd = "mysql -u{$config['dtruckername']} -p{$config['dbPassword']} -h{$config['dbServer']} {$config['dbDatabase']} < {$bfile}";
+			$cmd = "mysql -u{$config['dbUsername']} -p{$config['dbPassword']} -h{$config['dbServer']} {$config['dbDatabase']} < {$bfile}";
 			@exec($cmd, $out, $ret);
 			maintenance_mode(false);
 

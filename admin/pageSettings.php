@@ -65,7 +65,7 @@
 
 		$new_config = array(
 			'dbServer' => config('dbServer'),
-			'dtruckername' => config('dtruckername'),
+			'dbUsername' => config('dbUsername'),
 			'dbPassword' => config('dbPassword'),
 			'dbDatabase' => config('dbDatabase'),
 
