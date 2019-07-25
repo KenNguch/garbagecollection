@@ -1,12 +1,12 @@
 <?php
 	// For help on using hooks, please refer to https://bigprof.com/appgini/help/working-with-generated-web-database-application/hooks
 
-	function truckes_init(&$options, $memberInfo, &$args){
+	function trucks_init(&$options, $memberInfo, &$args){
 
 		return TRUE;
 	}
 
-	function truckes_header($contentType, $memberInfo, &$args){
+	function trucks_header($contentType, $memberInfo, &$args){
 		$header='';
 
 		switch($contentType){
@@ -38,7 +38,7 @@
 		return $header;
 	}
 
-	function truckes_footer($contentType, $memberInfo, &$args){
+	function trucks_footer($contentType, $memberInfo, &$args){
 		$footer='';
 
 		switch($contentType){
@@ -70,7 +70,7 @@
 		return $footer;
 	}
 
-	function truckes_before_insert(&$data, $memberInfo, &$args){
+	function trucks_before_insert(&$data, $memberInfo, &$args){
 		$currentuser=($memberInfo['username']);
 		$countrecords=sqlValue("SELECT * FROM membership_userrecords WHERE tableName='trucks' AND memberID='$currentuser'");
 		if ($countrecords>0) {
@@ -82,39 +82,39 @@
 		else{return TRUE;}
 	}
 
-	function truckes_after_insert($data, $memberInfo, &$args){
+	function trucks_after_insert($data, $memberInfo, &$args){
 
 		return TRUE;
 	}
 
-	function truckes_before_update(&$data, $memberInfo, &$args){
+	function trucks_before_update(&$data, $memberInfo, &$args){
 
 		return TRUE;
 	}
 
-	function truckes_after_update($data, $memberInfo, &$args){
+	function trucks_after_update($data, $memberInfo, &$args){
 
 		return TRUE;
 	}
 
-	function truckes_before_delete($selectedID, &$skipChecks, $memberInfo, &$args){
+	function trucks_before_delete($selectedID, &$skipChecks, $memberInfo, &$args){
 
 		return TRUE;
 	}
 
-	function truckes_after_delete($selectedID, $memberInfo, &$args){
+	function trucks_after_delete($selectedID, $memberInfo, &$args){
 
 	}
 
-	function truckes_dv($selectedID, $memberInfo, &$html, &$args){
+	function trucks_dv($selectedID, $memberInfo, &$html, &$args){
 
 	}
 
-	function truckes_csv($query, $memberInfo, &$args){
+	function trucks_csv($query, $memberInfo, &$args){
 
 		return $query;
 	}
-	function truckes_batch_actions(&$args){
+	function trucks_batch_actions(&$args){
 
 		return array();
 	}

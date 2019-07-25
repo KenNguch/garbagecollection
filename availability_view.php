@@ -23,7 +23,7 @@
 	// Fields that can be displayed in the table view
 	$x->QueryFieldsTV = array(   
 		"`availability`.`id`" => "id",
-		"IF(    CHAR_LENGTH(`truckes1`.`number`), CONCAT_WS('',   `truckes1`.`number`), '') /* truck */" => "truck",
+		"IF(    CHAR_LENGTH(`trucks1`.`number`), CONCAT_WS('',   `trucks1`.`number`), '') /* truck */" => "truck",
 		"IF(    CHAR_LENGTH(`routes1`.`name`) || CHAR_LENGTH(`routes1`.`time`), CONCAT_WS('',   `routes1`.`name`, '  :', `routes1`.`time`), '') /* Route */" => "route",
 		"IF(    CHAR_LENGTH(`routes1`.`amount`), CONCAT_WS('',   `routes1`.`amount`), '') /* Amount */" => "amount",
 		"if(`availability`.`date`,date_format(`availability`.`date`,'%m/%d/%Y'),'')" => "date",
@@ -33,7 +33,7 @@
 	// mapping incoming sort by requests to actual query fields
 	$x->SortFields = array(   
 		1 => '`availability`.`id`',
-		2 => '`truckes1`.`number`',
+		2 => '`trucks1`.`number`',
 		3 => 3,
 		4 => '`routes1`.`amount`',
 		5 => '`availability`.`date`',
@@ -44,7 +44,7 @@
 	// Fields that can be displayed in the csv file
 	$x->QueryFieldsCSV = array(   
 		"`availability`.`id`" => "id",
-		"IF(    CHAR_LENGTH(`truckes1`.`number`), CONCAT_WS('',   `truckes1`.`number`), '') /* truck */" => "truck",
+		"IF(    CHAR_LENGTH(`trucks1`.`number`), CONCAT_WS('',   `trucks1`.`number`), '') /* truck */" => "truck",
 		"IF(    CHAR_LENGTH(`routes1`.`name`) || CHAR_LENGTH(`routes1`.`time`), CONCAT_WS('',   `routes1`.`name`, '  :', `routes1`.`time`), '') /* Route */" => "route",
 		"IF(    CHAR_LENGTH(`routes1`.`amount`), CONCAT_WS('',   `routes1`.`amount`), '') /* Amount */" => "amount",
 		"if(`availability`.`date`,date_format(`availability`.`date`,'%m/%d/%Y'),'')" => "date",
@@ -54,7 +54,7 @@
 	// Fields that can be filtered
 	$x->QueryFieldsFilters = array(   
 		"`availability`.`id`" => "ID",
-		"IF(    CHAR_LENGTH(`truckes1`.`number`), CONCAT_WS('',   `truckes1`.`number`), '') /* truck */" => "truck",
+		"IF(    CHAR_LENGTH(`trucks1`.`number`), CONCAT_WS('',   `trucks1`.`number`), '') /* truck */" => "truck",
 		"IF(    CHAR_LENGTH(`routes1`.`name`) || CHAR_LENGTH(`routes1`.`time`), CONCAT_WS('',   `routes1`.`name`, '  :', `routes1`.`time`), '') /* Route */" => "Route",
 		"IF(    CHAR_LENGTH(`routes1`.`amount`), CONCAT_WS('',   `routes1`.`amount`), '') /* Amount */" => "Amount",
 		"`availability`.`date`" => "Date",
@@ -65,7 +65,7 @@
 	// Fields that can be quick searched
 	$x->QueryFieldsQS = array(   
 		"`availability`.`id`" => "id",
-		"IF(    CHAR_LENGTH(`truckes1`.`number`), CONCAT_WS('',   `truckes1`.`number`), '') /* truck */" => "truck",
+		"IF(    CHAR_LENGTH(`trucks1`.`number`), CONCAT_WS('',   `trucks1`.`number`), '') /* truck */" => "truck",
 		"IF(    CHAR_LENGTH(`routes1`.`name`) || CHAR_LENGTH(`routes1`.`time`), CONCAT_WS('',   `routes1`.`name`, '  :', `routes1`.`time`), '') /* Route */" => "route",
 		"IF(    CHAR_LENGTH(`routes1`.`amount`), CONCAT_WS('',   `routes1`.`amount`), '') /* Amount */" => "amount",
 		"if(`availability`.`date`,date_format(`availability`.`date`,'%m/%d/%Y'),'')" => "date",
@@ -76,7 +76,7 @@
 	// Lookup fields that can be used as filterers
 	$x->filterers = array(  'truck' => 'truck', 'route' => 'Route');
 
-	$x->QueryFrom = "`availability` LEFT JOIN `trucks` as truckes1 ON `truckes1`.`id`=`availability`.`truck` LEFT JOIN `routes` as routes1 ON `routes1`.`id`=`availability`.`route` ";
+	$x->QueryFrom = "`availability` LEFT JOIN `trucks` as trucks1 ON `trucks1`.`id`=`availability`.`truck` LEFT JOIN `routes` as routes1 ON `routes1`.`id`=`availability`.`route` ";
 	$x->QueryWhere = '';
 	$x->QueryOrder = '';
 

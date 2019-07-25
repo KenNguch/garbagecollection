@@ -89,7 +89,7 @@ function duetoday($table){
 		#code..get truck details
 		$sql="SELECT * FROM trucks WHERE id='$truckid'";
 		$result=mysqli_query($con,$sql);
-		foreach ($result as $altruckes => $truckdetails) {
+		foreach ($result as $altrucks => $truckdetails) {
 			# code...
 			$truck=$truckdetails['number'];
 		}

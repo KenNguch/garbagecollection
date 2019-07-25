@@ -58,7 +58,7 @@
                                 <h3><?php countrecords("trucks"); ?></h3>
                             </div>
                             <div class="panel-footer back-footer-green">
-                                <a href="truckes_view.php" style="text-decoration: none;color: white"><strong>trucks</strong></a>
+                                <a href="trucks_view.php" style="text-decoration: none;color: white"><strong>trucks</strong></a>
 
                             </div>
                         </div>

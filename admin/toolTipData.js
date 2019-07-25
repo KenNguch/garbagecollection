@@ -12,22 +12,22 @@ visitorSignup1Tip=["", spacer+"If this option is selected, visitors can join thi
 visitorSignup2Tip=["", spacer+"If this option is selected, visitors can join this group and will be able to sign in instantly with no need for admin approval."];
 
 // trucks table
-truckes_addTip=["",spacer+"This option allows all members of the group to add records to the 'trucks' table. A member who adds a record to the table becomes the 'owner' of that record."];
+trucks_addTip=["",spacer+"This option allows all members of the group to add records to the 'trucks' table. A member who adds a record to the table becomes the 'owner' of that record."];
 
-truckes_view0Tip=["",spacer+"This option prohibits all members of the group from viewing any record in the 'trucks' table."];
-truckes_view1Tip=["",spacer+"This option allows each member of the group to view only his own records in the 'trucks' table."];
-truckes_view2Tip=["",spacer+"This option allows each member of the group to view any record owned by any member of the group in the 'trucks' table."];
-truckes_view3Tip=["",spacer+"This option allows each member of the group to view all records in the 'trucks' table."];
+trucks_view0Tip=["",spacer+"This option prohibits all members of the group from viewing any record in the 'trucks' table."];
+trucks_view1Tip=["",spacer+"This option allows each member of the group to view only his own records in the 'trucks' table."];
+trucks_view2Tip=["",spacer+"This option allows each member of the group to view any record owned by any member of the group in the 'trucks' table."];
+trucks_view3Tip=["",spacer+"This option allows each member of the group to view all records in the 'trucks' table."];
 
-truckes_edit0Tip=["",spacer+"This option prohibits all members of the group from modifying any record in the 'trucks' table."];
-truckes_edit1Tip=["",spacer+"This option allows each member of the group to edit only his own records in the 'trucks' table."];
-truckes_edit2Tip=["",spacer+"This option allows each member of the group to edit any record owned by any member of the group in the 'trucks' table."];
-truckes_edit3Tip=["",spacer+"This option allows each member of the group to edit any records in the 'trucks' table, regardless of their owner."];
+trucks_edit0Tip=["",spacer+"This option prohibits all members of the group from modifying any record in the 'trucks' table."];
+trucks_edit1Tip=["",spacer+"This option allows each member of the group to edit only his own records in the 'trucks' table."];
+trucks_edit2Tip=["",spacer+"This option allows each member of the group to edit any record owned by any member of the group in the 'trucks' table."];
+trucks_edit3Tip=["",spacer+"This option allows each member of the group to edit any records in the 'trucks' table, regardless of their owner."];
 
-truckes_delete0Tip=["",spacer+"This option prohibits all members of the group from deleting any record in the 'trucks' table."];
-truckes_delete1Tip=["",spacer+"This option allows each member of the group to delete only his own records in the 'trucks' table."];
-truckes_delete2Tip=["",spacer+"This option allows each member of the group to delete any record owned by any member of the group in the 'trucks' table."];
-truckes_delete3Tip=["",spacer+"This option allows each member of the group to delete any records in the 'trucks' table."];
+trucks_delete0Tip=["",spacer+"This option prohibits all members of the group from deleting any record in the 'trucks' table."];
+trucks_delete1Tip=["",spacer+"This option allows each member of the group to delete only his own records in the 'trucks' table."];
+trucks_delete2Tip=["",spacer+"This option allows each member of the group to delete any record owned by any member of the group in the 'trucks' table."];
+trucks_delete3Tip=["",spacer+"This option allows each member of the group to delete any records in the 'trucks' table."];
 
 // slots table
 slots_addTip=["",spacer+"This option allows all members of the group to add records to the 'slots' table. A member who adds a record to the table becomes the 'owner' of that record."];

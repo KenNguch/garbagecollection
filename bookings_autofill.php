@@ -49,7 +49,7 @@
 				<?php
 				break;
 			}
-			$res = sql("SELECT `availability`.`id` as 'id', IF(    CHAR_LENGTH(`truckes1`.`number`), CONCAT_WS('',   `truckes1`.`number`), '') as 'truck', IF(    CHAR_LENGTH(`routes1`.`name`) || CHAR_LENGTH(`routes1`.`time`), CONCAT_WS('',   `routes1`.`name`, '  :', `routes1`.`time`), '') as 'route', IF(    CHAR_LENGTH(`routes1`.`amount`), CONCAT_WS('',   `routes1`.`amount`), '') as 'amount', if(`availability`.`date`,date_format(`availability`.`date`,'%m/%d/%Y'),'') as 'date', TIME_FORMAT(`availability`.`time`, '%r') as 'time', `availability`.`status` as 'status' FROM `availability` LEFT JOIN `trucks` as truckes1 ON `truckes1`.`id`=`availability`.`truck` LEFT JOIN `routes` as routes1 ON `routes1`.`id`=`availability`.`route`  WHERE `availability`.`id`='{$id}' limit 1", $eo);
+			$res = sql("SELECT `availability`.`id` as 'id', IF(    CHAR_LENGTH(`trucks1`.`number`), CONCAT_WS('',   `trucks1`.`number`), '') as 'truck', IF(    CHAR_LENGTH(`routes1`.`name`) || CHAR_LENGTH(`routes1`.`time`), CONCAT_WS('',   `routes1`.`name`, '  :', `routes1`.`time`), '') as 'route', IF(    CHAR_LENGTH(`routes1`.`amount`), CONCAT_WS('',   `routes1`.`amount`), '') as 'amount', if(`availability`.`date`,date_format(`availability`.`date`,'%m/%d/%Y'),'') as 'date', TIME_FORMAT(`availability`.`time`, '%r') as 'time', `availability`.`status` as 'status' FROM `availability` LEFT JOIN `trucks` as trucks1 ON `trucks1`.`id`=`availability`.`truck` LEFT JOIN `routes` as routes1 ON `routes1`.`id`=`availability`.`route`  WHERE `availability`.`id`='{$id}' limit 1", $eo);
 			$row = db_fetch_assoc($res);
 			?>
 			$j('#amount<?php echo $rnd1; ?>').html('<?php echo addslashes(str_replace(array("\r", "\n"), '', nl2br($row['amount']))); ?>&nbsp;');

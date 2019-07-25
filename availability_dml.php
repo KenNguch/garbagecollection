@@ -301,7 +301,7 @@ function availability_form($selected_id = '', $AllowUpdate = 1, $AllowInsert = 1
 							});
 							$j('[name="truck"]').val(resp.results[0].id);
 							$j('[id=truck-container-readonly__RAND__]').html('<span id="truck-match-text">' + resp.results[0].text + '</span>');
-							if(resp.results[0].id == '<?php echo empty_lookup_value; ?>'){ $j('.btn[id=truckes_view_parent]').hide(); }else{ $j('.btn[id=truckes_view_parent]').show(); }
+							if(resp.results[0].id == '<?php echo empty_lookup_value; ?>'){ $j('.btn[id=trucks_view_parent]').hide(); }else{ $j('.btn[id=trucks_view_parent]').show(); }
 
 
 							if(typeof(truck_update_autofills__RAND__) == 'function') truck_update_autofills__RAND__();
@@ -324,7 +324,7 @@ function availability_form($selected_id = '', $AllowUpdate = 1, $AllowInsert = 1
 				AppGini.current_truck__RAND__.value = e.added.id;
 				AppGini.current_truck__RAND__.text = e.added.text;
 				$j('[name="truck"]').val(e.added.id);
-				if(e.added.id == '<?php echo empty_lookup_value; ?>'){ $j('.btn[id=truckes_view_parent]').hide(); }else{ $j('.btn[id=truckes_view_parent]').show(); }
+				if(e.added.id == '<?php echo empty_lookup_value; ?>'){ $j('.btn[id=trucks_view_parent]').hide(); }else{ $j('.btn[id=trucks_view_parent]').show(); }
 
 
 				if(typeof(truck_update_autofills__RAND__) == 'function') truck_update_autofills__RAND__();
@@ -338,7 +338,7 @@ function availability_form($selected_id = '', $AllowUpdate = 1, $AllowInsert = 1
 					success: function(resp){
 						$j('[name="truck"]').val(resp.results[0].id);
 						$j('[id=truck-container-readonly__RAND__]').html('<span id="truck-match-text">' + resp.results[0].text + '</span>');
-						if(resp.results[0].id == '<?php echo empty_lookup_value; ?>'){ $j('.btn[id=truckes_view_parent]').hide(); }else{ $j('.btn[id=truckes_view_parent]').show(); }
+						if(resp.results[0].id == '<?php echo empty_lookup_value; ?>'){ $j('.btn[id=trucks_view_parent]').hide(); }else{ $j('.btn[id=trucks_view_parent]').show(); }
 
 						if(typeof(truck_update_autofills__RAND__) == 'function') truck_update_autofills__RAND__();
 					}
@@ -353,7 +353,7 @@ function availability_form($selected_id = '', $AllowUpdate = 1, $AllowInsert = 1
 				data: { id: AppGini.current_truck__RAND__.value, t: 'availability', f: 'truck' },
 				success: function(resp){
 					$j('[id=truck-container__RAND__], [id=truck-container-readonly__RAND__]').html('<span id="truck-match-text">' + resp.results[0].text + '</span>');
-					if(resp.results[0].id == '<?php echo empty_lookup_value; ?>'){ $j('.btn[id=truckes_view_parent]').hide(); }else{ $j('.btn[id=truckes_view_parent]').show(); }
+					if(resp.results[0].id == '<?php echo empty_lookup_value; ?>'){ $j('.btn[id=trucks_view_parent]').hide(); }else{ $j('.btn[id=trucks_view_parent]').show(); }
 
 					if(typeof(truck_update_autofills__RAND__) == 'function') truck_update_autofills__RAND__();
 				}

@@ -267,7 +267,7 @@ function fix_table_responsive_width(){
 	}
 }
 
-function truckes_validateData(){
+function trucks_validateData(){
 	$j('.has-error').removeClass('has-error');
 	return true;
 }

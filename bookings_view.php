@@ -26,7 +26,7 @@
 		"IF(    CHAR_LENGTH(`customers1`.`id_number`), CONCAT_WS('',   `customers1`.`id_number`), '') /* Id number */" => "id_number",
 		"IF(    CHAR_LENGTH(`customers1`.`fullname`), CONCAT_WS('',   `customers1`.`fullname`), '') /* Fullname */" => "fullname",
 		"IF(    CHAR_LENGTH(`customers1`.`phone`), CONCAT_WS('',   `customers1`.`phone`), '') /* Phone */" => "phone",
-		"IF(    CHAR_LENGTH(`truckes1`.`number`) || CHAR_LENGTH(`routes1`.`name`) || CHAR_LENGTH(`routes1`.`time`), CONCAT_WS('',   `truckes1`.`number`, `routes1`.`name`, '  :', `routes1`.`time`), '') /* truck */" => "truck",
+		"IF(    CHAR_LENGTH(`trucks1`.`number`) || CHAR_LENGTH(`routes1`.`name`) || CHAR_LENGTH(`routes1`.`time`), CONCAT_WS('',   `trucks1`.`number`, `routes1`.`name`, '  :', `routes1`.`time`), '') /* truck */" => "truck",
 		"IF(    CHAR_LENGTH(`slots1`.`name`), CONCAT_WS('',   `slots1`.`name`), '') /* slot */" => "slot",
 		"IF(    CHAR_LENGTH(`routes1`.`amount`), CONCAT_WS('',   `routes1`.`amount`), '') /* Amount */" => "amount",
 		"IF(    CHAR_LENGTH(if(`availability1`.`date`,date_format(`availability1`.`date`,'%m/%d/%Y'),'')), CONCAT_WS('',   if(`availability1`.`date`,date_format(`availability1`.`date`,'%m/%d/%Y'),'')), '') /* Date */" => "date",
@@ -55,7 +55,7 @@
 		"IF(    CHAR_LENGTH(`customers1`.`id_number`), CONCAT_WS('',   `customers1`.`id_number`), '') /* Id number */" => "id_number",
 		"IF(    CHAR_LENGTH(`customers1`.`fullname`), CONCAT_WS('',   `customers1`.`fullname`), '') /* Fullname */" => "fullname",
 		"IF(    CHAR_LENGTH(`customers1`.`phone`), CONCAT_WS('',   `customers1`.`phone`), '') /* Phone */" => "phone",
-		"IF(    CHAR_LENGTH(`truckes1`.`number`) || CHAR_LENGTH(`routes1`.`name`) || CHAR_LENGTH(`routes1`.`time`), CONCAT_WS('',   `truckes1`.`number`, `routes1`.`name`, '  :', `routes1`.`time`), '') /* truck */" => "truck",
+		"IF(    CHAR_LENGTH(`trucks1`.`number`) || CHAR_LENGTH(`routes1`.`name`) || CHAR_LENGTH(`routes1`.`time`), CONCAT_WS('',   `trucks1`.`number`, `routes1`.`name`, '  :', `routes1`.`time`), '') /* truck */" => "truck",
 		"IF(    CHAR_LENGTH(`slots1`.`name`), CONCAT_WS('',   `slots1`.`name`), '') /* slot */" => "slot",
 		"IF(    CHAR_LENGTH(`routes1`.`amount`), CONCAT_WS('',   `routes1`.`amount`), '') /* Amount */" => "amount",
 		"IF(    CHAR_LENGTH(if(`availability1`.`date`,date_format(`availability1`.`date`,'%m/%d/%Y'),'')), CONCAT_WS('',   if(`availability1`.`date`,date_format(`availability1`.`date`,'%m/%d/%Y'),'')), '') /* Date */" => "date",
@@ -69,7 +69,7 @@
 		"IF(    CHAR_LENGTH(`customers1`.`id_number`), CONCAT_WS('',   `customers1`.`id_number`), '') /* Id number */" => "Id number",
 		"IF(    CHAR_LENGTH(`customers1`.`fullname`), CONCAT_WS('',   `customers1`.`fullname`), '') /* Fullname */" => "Fullname",
 		"IF(    CHAR_LENGTH(`customers1`.`phone`), CONCAT_WS('',   `customers1`.`phone`), '') /* Phone */" => "Phone",
-		"IF(    CHAR_LENGTH(`truckes1`.`number`) || CHAR_LENGTH(`routes1`.`name`) || CHAR_LENGTH(`routes1`.`time`), CONCAT_WS('',   `truckes1`.`number`, `routes1`.`name`, '  :', `routes1`.`time`), '') /* truck */" => "truck",
+		"IF(    CHAR_LENGTH(`trucks1`.`number`) || CHAR_LENGTH(`routes1`.`name`) || CHAR_LENGTH(`routes1`.`time`), CONCAT_WS('',   `trucks1`.`number`, `routes1`.`name`, '  :', `routes1`.`time`), '') /* truck */" => "truck",
 		"IF(    CHAR_LENGTH(`slots1`.`name`), CONCAT_WS('',   `slots1`.`name`), '') /* slot */" => "slot",
 		"IF(    CHAR_LENGTH(`routes1`.`amount`), CONCAT_WS('',   `routes1`.`amount`), '') /* Amount */" => "Amount",
 		"IF(    CHAR_LENGTH(if(`availability1`.`date`,date_format(`availability1`.`date`,'%m/%d/%Y'),'')), CONCAT_WS('',   if(`availability1`.`date`,date_format(`availability1`.`date`,'%m/%d/%Y'),'')), '') /* Date */" => "Date",
@@ -84,7 +84,7 @@
 		"IF(    CHAR_LENGTH(`customers1`.`id_number`), CONCAT_WS('',   `customers1`.`id_number`), '') /* Id number */" => "id_number",
 		"IF(    CHAR_LENGTH(`customers1`.`fullname`), CONCAT_WS('',   `customers1`.`fullname`), '') /* Fullname */" => "fullname",
 		"IF(    CHAR_LENGTH(`customers1`.`phone`), CONCAT_WS('',   `customers1`.`phone`), '') /* Phone */" => "phone",
-		"IF(    CHAR_LENGTH(`truckes1`.`number`) || CHAR_LENGTH(`routes1`.`name`) || CHAR_LENGTH(`routes1`.`time`), CONCAT_WS('',   `truckes1`.`number`, `routes1`.`name`, '  :', `routes1`.`time`), '') /* truck */" => "truck",
+		"IF(    CHAR_LENGTH(`trucks1`.`number`) || CHAR_LENGTH(`routes1`.`name`) || CHAR_LENGTH(`routes1`.`time`), CONCAT_WS('',   `trucks1`.`number`, `routes1`.`name`, '  :', `routes1`.`time`), '') /* truck */" => "truck",
 		"IF(    CHAR_LENGTH(`slots1`.`name`), CONCAT_WS('',   `slots1`.`name`), '') /* slot */" => "slot",
 		"IF(    CHAR_LENGTH(`routes1`.`amount`), CONCAT_WS('',   `routes1`.`amount`), '') /* Amount */" => "amount",
 		"IF(    CHAR_LENGTH(if(`availability1`.`date`,date_format(`availability1`.`date`,'%m/%d/%Y'),'')), CONCAT_WS('',   if(`availability1`.`date`,date_format(`availability1`.`date`,'%m/%d/%Y'),'')), '') /* Date */" => "date",
@@ -96,7 +96,7 @@
 	// Lookup fields that can be used as filterers
 	$x->filterers = array(  'id_number' => 'Id number', 'truck' => 'truck', 'slot' => 'slot');
 
-	$x->QueryFrom = "`bookings` LEFT JOIN `customers` as customers1 ON `customers1`.`id`=`bookings`.`id_number` LEFT JOIN `availability` as availability1 ON `availability1`.`id`=`bookings`.`truck` LEFT JOIN `trucks` as truckes1 ON `truckes1`.`id`=`availability1`.`truck` LEFT JOIN `routes` as routes1 ON `routes1`.`id`=`availability1`.`route` LEFT JOIN `slots` as slots1 ON `slots1`.`id`=`bookings`.`slot` ";
+	$x->QueryFrom = "`bookings` LEFT JOIN `customers` as customers1 ON `customers1`.`id`=`bookings`.`id_number` LEFT JOIN `availability` as availability1 ON `availability1`.`id`=`bookings`.`truck` LEFT JOIN `trucks` as trucks1 ON `trucks1`.`id`=`availability1`.`truck` LEFT JOIN `routes` as routes1 ON `routes1`.`id`=`availability1`.`route` LEFT JOIN `slots` as slots1 ON `slots1`.`id`=`bookings`.`slot` ";
 	$x->QueryWhere = '';
 	$x->QueryOrder = '';
 

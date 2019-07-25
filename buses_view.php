@@ -7,7 +7,7 @@
 	include("$currDir/language.php");
 	include("$currDir/lib.php");
 	@include("$currDir/hooks/trucks.php");
-	include("$currDir/truckes_dml.php");
+	include("$currDir/trucks_dml.php");
 
 	// mm: can the current member access this page?
 	$perm=getTablePermissions('trucks');
@@ -72,8 +72,8 @@
 	$x->RecordsPerPage = 10;
 	$x->QuickSearch = 1;
 	$x->QuickSearchText = $Translation["quick search"];
-	$x->ScriptFileName = "truckes_view.php";
-	$x->RedirectAfterInsert = "truckes_view.php?SelectedID=#ID#";
+	$x->ScriptFileName = "trucks_view.php";
+	$x->RedirectAfterInsert = "trucks_view.php?SelectedID=#ID#";
 	$x->TableTitle = "trucks";
 	$x->TableIcon = "resources/table_icons/yellow_submarine.png";
 	$x->PrimaryKey = "`trucks`.`id`";
@@ -86,10 +86,10 @@
 	$x->ColNumber  = array(2);
 
 	// template paths below are based on the app main directory
-	$x->Template = 'templates/truckes_templateTV.html';
-	$x->SelectedTemplate = 'templates/truckes_templateTVS.html';
-	$x->TemplateDV = 'templates/truckes_templateDV.html';
-	$x->TemplateDVP = 'templates/truckes_templateDVP.html';
+	$x->Template = 'templates/trucks_templateTV.html';
+	$x->SelectedTemplate = 'templates/trucks_templateTVS.html';
+	$x->TemplateDV = 'templates/trucks_templateDV.html';
+	$x->TemplateDVP = 'templates/trucks_templateDVP.html';
 
 	$x->ShowTableHeader = 1;
 	$x->TVClasses = "";
@@ -113,20 +113,20 @@
 		$x->QueryWhere = '';
 		$x->DefaultSortField = '';
 	}
-	// hook: truckes_init
+	// hook: trucks_init
 	$render=TRUE;
-	if(function_exists('truckes_init')){
+	if(function_exists('trucks_init')){
 		$args=array();
-		$render=truckes_init($x, getMemberInfo(), $args);
+		$render=trucks_init($x, getMemberInfo(), $args);
 	}
 
 	if($render) $x->Render();
 
-	// hook: truckes_header
+	// hook: trucks_header
 	$headerCode='';
-	if(function_exists('truckes_header')){
+	if(function_exists('trucks_header')){
 		$args=array();
-		$headerCode=truckes_header($x->ContentType, getMemberInfo(), $args);
+		$headerCode=trucks_header($x->ContentType, getMemberInfo(), $args);
 	}  
 	if(!$headerCode){
 		include_once("$currDir/header.php"); 
@@ -136,11 +136,11 @@
 	}
 
 	echo $x->HTML;
-	// hook: truckes_footer
+	// hook: trucks_footer
 	$footerCode='';
-	if(function_exists('truckes_footer')){
+	if(function_exists('trucks_footer')){
 		$args=array();
-		$footerCode=truckes_footer($x->ContentType, getMemberInfo(), $args);
+		$footerCode=trucks_footer($x->ContentType, getMemberInfo(), $args);
 	}  
 	if(!$footerCode){
 		include_once("$currDir/footer.php"); 

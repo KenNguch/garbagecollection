@@ -82,7 +82,7 @@
                         <a href="bookings_view.php"><i class="fa fa-money"></i>Bookings</a>
                     </li>
                     <li>
-                        <a href="truckes_view.php"><i class="fa fa-truck"></i>trucks</a>
+                        <a href="trucks_view.php"><i class="fa fa-truck"></i>trucks</a>
                     </li>
                     
                     <li>
