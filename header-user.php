@@ -28,7 +28,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">BBS(Trial)</a>
+                <a class="navbar-brand" href="index.html">Garbage Kollectors</a>
             </div>
 
             <ul class="nav navbar-top-links navbar-right">
