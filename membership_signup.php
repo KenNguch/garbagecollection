@@ -1,5 +1,5 @@
 <?php
-	$app_name = 'truck Booking System';
+	$app_name = 'Garbage Kollectorz System ';
 	$currDir = dirname(__FILE__);
 	include("{$currDir}/defaultLang.php");
 	include("{$currDir}/language.php");
