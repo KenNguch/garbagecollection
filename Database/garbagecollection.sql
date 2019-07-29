@@ -33,8 +33,6 @@ CREATE TABLE `bookings` (
   `slot` int(10) UNSIGNED DEFAULT NULL,
   `date` int(10) UNSIGNED DEFAULT '1',
   `time` int(10) UNSIGNED DEFAULT NULL,
-  `luggage` varchar(40) DEFAULT NULL,
-  `amount` varchar(40) DEFAULT NULL,
   `date_booked` date DEFAULT NULL,
   `field11` varchar(40) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
