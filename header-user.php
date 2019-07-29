@@ -121,7 +121,7 @@
                   </div> 
                  <?php include("main.php");?>
                  <!-- /. ROW  -->
-				 <footer><strong><p>Garbage Kollectorz System (Trial Version).All rights reserved. Project Made by: <a href="http://www.ronaldngoda.rf.gd">Ronald Ngoda +254708344101</a></p></strong></footer>
+				 <footer><strong><p>Garbage Kollectorz System .All rights reserved. @ 2019</p></strong></footer>
 				</div>
              <!-- /. PAGE INNER  -->
             </div>

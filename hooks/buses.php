@@ -75,7 +75,7 @@
 		$countrecords=sqlValue("SELECT * FROM membership_userrecords WHERE tableName='trucks' AND memberID='$currentuser'");
 		if ($countrecords>0) {
 			# code...
-			$_SESSION['custom_err_msg']="<b>Sorry Record Not Saved,You are only limited to one record in each table.(TRIAL VERSION)</b>";
+			$_SESSION['custom_err_msg']="<b>Sorry Record Not Saved,You are only limited to one record in each table.</b>";
 			return FALSE;
 
 		}
