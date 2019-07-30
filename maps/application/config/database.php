@@ -48,12 +48,10 @@
 $active_group = 'default';
 //$active_record = TRUE;
 $query_builder = TRUE;
-$db['default']['hostname'] = "localhost";
-$db['default']['username'] = "root";
-$db['default']['password'] = "";
-$db['default']['database'] = "demo";
-
-
+$db['default']['hostname'] = "us-cdbr-iron-east-02.cleardb.net";
+$db['default']['username'] = "b1ba6b6cee86e7";
+$db['default']['password'] = "6b75b8d6";
+$db['default']['database'] = "heroku_28c866c0cec52d8";
 
 $db['default']['dbdriver'] = "mysqli";
 $db['default']['dbprefix'] = '';

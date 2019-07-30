@@ -1,8 +1,8 @@
 <?php
-	$dbServer = 'localhost';
-	$dbUsername = 'root';
-	$dbPassword = '';
-	$dbDatabase = 'truckbooking';
+	$dbServer = 'us-cdbr-iron-east-02.cleardb.net';
+	$dbUsername = 'b1ba6b6cee86e7';
+	$dbPassword = '6b75b8d6';
+	$dbDatabase = 'heroku_28c866c0cec52d8';
 
 	$adminConfig = array(
 		'adminUsername' => "admin",
