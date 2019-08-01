@@ -1,9 +1,9 @@
 <?php 
 	class DbConnect {
-		private $host = 'localhost';
-		private $dbName = 'education';
-		private $user = 'root';
-		private $pass = '';
+		private $host = 'us-cdbr-iron-east-02.cleardb.net';
+		private $dbName = 'heroku_28c866c0cec52d8';
+		private $user = 'b1ba6b6cee86e7';
+		private $pass = '6b75b8d6';
 
 		public function connect() {
 			try {
