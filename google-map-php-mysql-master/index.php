@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!-- <title>Access Google Maps API in PHP</title>
+	<title>Access Google Maps API in PHP</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script> -->
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/googlemap.js"></script>
 	<style type="text/css">
 		.container {
@@ -21,7 +21,7 @@
 </head>
 <body>
 	<div class="container">
-		<center><h1>Access Google Maps API in PHP</h1></center>
+		<h1>Access Google Maps API in PHP</h1>
 		<?php 
 			require 'education.php';
 			$edu = new education;
