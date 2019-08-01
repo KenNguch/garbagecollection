@@ -192,10 +192,6 @@ include 'locations_model.php';
 
     </script>
 
-
-
-
-
 <?php
 include_once 'footer.php';
 
