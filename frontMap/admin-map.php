@@ -98,5 +98,5 @@ include_once 'locations_model.php';
     </table>
 </div>
 <script async defer
-        src="https://maps.googleapis.com/maps/api/js?language=en&key=AIzaSyA-AB-9XZd-iQby-bNLYPFyb0pR2Qw3orw&callback=initMap">
+        src="https://maps.googleapis.com/maps/api/js?language=en&key=AIzaSyCE5fq8rvMs6Cv6UbdjDN56G-Bikb1IwZo&callback=initMap">
 </script>

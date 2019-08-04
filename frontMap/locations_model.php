@@ -32,7 +32,7 @@ function add_location(){
     }
 }
 function confirm_location(){
-    $con=mysqli_connect ("localhost", 'root', '','demo');
+    $con=mysqli_connect ("us-cdbr-iron-east-02.cleardb.net", 'b1ba6b6cee86e7', '6b75b8d6','heroku_28c866c0cec52d8');
     if (!$con) {
         die('Not connected : ' . mysqli_connect_error());
     }
