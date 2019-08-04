@@ -37,6 +37,8 @@
 	</div>
 </body>
 <script async defer
+
     src="https://maps.googles.com/maps/api/js?key=AIzaSyCE5fq8rvMs6Cv6UbdjDN56G-Bikb1IwZo&callback=loadMap">
+	
 </script>
 </html>
