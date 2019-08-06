@@ -2,17 +2,17 @@ var map;
 var geocoder;
 
 function loadMap() {
-    var pune = {
-        lat: -1.106201,
-        lng: 36.626874
+    var limuru = {
+        lat: -1.109350,
+        lng: 36.643220
     };
     map = new google.maps.Map(document.getElementById('map'), {
         zoom: 16,
-        center: pune
+        center: limuru
     });
 
     var marker = new google.maps.Marker({
-        position: pune,
+        position: limuru,
         map: map
     });
 

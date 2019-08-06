@@ -40,16 +40,16 @@ CREATE TABLE `colleges` (
 --
 
 INSERT INTO `colleges` (`id`, `name`, `address`, `type`, `lat`, `lng`) VALUES
-(1, 'College of Engineering Pune', 'Wellesley Road, Shivajinagar, Pune, Maharashtra 411005', 'college', 18.529406, 73.856575),
-(2, 'P.E.S''s Modern College of Engineering', '1186/A, Off J.M. Road, Shivaji nagar, Sumukh Society, Shivajinagar, Pune, Maharashtra 411005', 'college', 18.525730, 73.846397),
-(3, 'Fergusson College, Pune', 'Fergusson College Road, Shivajinagar, Pune, Maharashtra 411004', 'college', 18.522816, 73.838898),
-(4, 'Symbiosis Institute Of Computer Studies and Research', 'Atur Centre, Gokhale Cross Road, Model Colony, Model Colony, Shivajinagar, Pune, Maharashtra 411016', 'college', 18.533438, 73.833679),
-(5, 'Maharashtra Institute of Technology', 'S.No.124, Paud Road, Kothrud, Rambaug Colony, Kothrud, Pune, Maharashtra 411038', 'college', 18.518368, 73.814720),
-(6, 'Air Force School', '213, Viman Nagar Rd, Air Force Campus, Viman Nagar, Pune, Maharashtra 411014', 'school', 18.573631, 73.916290),
-(7, 'Army Public School Dighi Camp', 'St Gyaneshwar-Kalas-Alandi Road, Kalas, Pune, Maharashtra 411015', 'school', 18.591740, 73.874680),
-(8, 'Pune International School', 'Survey No. 33/2, Road Number 14, Vidyanagar, Tingre Nagar, Vidyanagar, Dhanori, Pune, Maharashtra 411032', 'school', 18.577974, 73.896263),
-(9, 'The Lexicon International School, Kalyani Nagar', 'S no 212/1, Plot No. 59, Central Avenue, Next to Big Bazaar, Kalyani Nagar, Prathamesh Society, Kalyani Nagar, Pune, Maharashtra 411006', 'school', 18.546551, 73.901199),
-(10, 'The Orbis School', '33, 3A/6, Keshavnagar, Mundhwa, Hanuman Nagar, Keshav Nagar, Mundhwa, Pune, Maharashtra 411036', 'school', 18.532551, 73.950134);
+(1, 'College of Engineering limuru', 'Wellesley Road, Shivajinagar, limuru, Maharashtra 411005', 'college', 18.529406, 73.856575),
+(2, 'P.E.S''s Modern College of Engineering', '1186/A, Off J.M. Road, Shivaji nagar, Sumukh Society, Shivajinagar, limuru, Maharashtra 411005', 'college', 18.525730, 73.846397),
+(3, 'Fergusson College, limuru', 'Fergusson College Road, Shivajinagar, limuru, Maharashtra 411004', 'college', 18.522816, 73.838898),
+(4, 'Symbiosis Institute Of Computer Studies and Research', 'Atur Centre, Gokhale Cross Road, Model Colony, Model Colony, Shivajinagar, limuru, Maharashtra 411016', 'college', 18.533438, 73.833679),
+(5, 'Maharashtra Institute of Technology', 'S.No.124, Paud Road, Kothrud, Rambaug Colony, Kothrud, limuru, Maharashtra 411038', 'college', 18.518368, 73.814720),
+(6, 'Air Force School', '213, Viman Nagar Rd, Air Force Campus, Viman Nagar, limuru, Maharashtra 411014', 'school', 18.573631, 73.916290),
+(7, 'Army Public School Dighi Camp', 'St Gyaneshwar-Kalas-Alandi Road, Kalas, limuru, Maharashtra 411015', 'school', 18.591740, 73.874680),
+(8, 'limuru International School', 'Survey No. 33/2, Road Number 14, Vidyanagar, Tingre Nagar, Vidyanagar, Dhanori, limuru, Maharashtra 411032', 'school', 18.577974, 73.896263),
+(9, 'The Lexicon International School, Kalyani Nagar', 'S no 212/1, Plot No. 59, Central Avenue, Next to Big Bazaar, Kalyani Nagar, Prathamesh Society, Kalyani Nagar, limuru, Maharashtra 411006', 'school', 18.546551, 73.901199),
+(10, 'The Orbis School', '33, 3A/6, Keshavnagar, Mundhwa, Hanuman Nagar, Keshav Nagar, Mundhwa, limuru, Maharashtra 411036', 'school', 18.532551, 73.950134);
 
 --
 -- Indexes for dumped tables
