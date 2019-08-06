@@ -94,6 +94,12 @@
                     <li>
                         <a href="routes_view.php"><i class="fa fa-road"></i> Routes</a>
                     </li>
+                    <li>
+                        <a href="/route-location/index.php"><i class="fa fa-sitemap"></i>Pick Up Areas</a>
+                    </li>
+                    
+        
+                    </li>
                     <?php $currentuser=getLoggedMemberID();
                     if($currentuser=="admin"){
                     echo' <li>
