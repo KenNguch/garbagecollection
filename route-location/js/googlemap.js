@@ -11,6 +11,7 @@ function loadMap() {
         center: limuru,
         mapTypeId: 'satellite'
     });
+         map.setTilt(45);
 
     var marker = new google.maps.Marker({
         position: limuru,
