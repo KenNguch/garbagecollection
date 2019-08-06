@@ -7,7 +7,7 @@ function loadMap() {
         lng: 36.643220
     };
     map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 16,
+        zoom: 14,
         center: limuru
     });
 
