@@ -8,7 +8,8 @@ function loadMap() {
     };
     map = new google.maps.Map(document.getElementById('map'), {
         zoom: 14,
-        center: limuru
+        center: limuru,
+        mapTypeId: 'satellite'
     });
 
     var marker = new google.maps.Marker({
