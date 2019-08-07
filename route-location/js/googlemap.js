@@ -2,10 +2,7 @@ var map;
 var geocoder;
 
 function loadMap() {
-    var limuru = {
-        lat: -1.109350,
-        lng: 36.643220
-    };
+    var limuru = { lat: -1.109350,lng: 36.643220 };
     map = new google.maps.Map(document.getElementById('map'), {
         zoom: 15,
         center: limuru,
