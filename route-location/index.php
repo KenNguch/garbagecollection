@@ -9,7 +9,6 @@
         <style type="text/css">
             .container {
                 height: 450px;
-                
             }
 
             #map {
@@ -26,6 +25,18 @@
     <body>
     <div class="container">
         <?php
+        // hook: availability_header
+	$headerCode='';
+	if(function_exists('availability_header')){
+		$args=array();
+		$headerCode=availability_header($x->ContentType, getMemberInfo(), $args);
+	}  
+	if(!$headerCode){
+		include_once("$currDir/header.php"); 
+	}else{
+		ob_start(); include_once("$currDir/header.php"); $dHeader=ob_get_contents(); ob_end_clean();
+		echo str_replace('<%%HEADER%%>', $dHeader, $headerCode);
+	}
         require 'education.php';
         $edu = new education;
         $coll = $edu->getCollegesBlankLatLng();
@@ -43,14 +54,3 @@
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1bF3Ry-gVyKmSVse4s1zmfnyd4_9b3F8&callback=loadMap">
     </script>
     </html>
-<?php
-if (!$footerCode) {
-    include_once("$currDir/footer.php");
-} else {
-    ob_start();
-    include_once("footer.php");
-    $dFooter = ob_get_contents();
-    ob_end_clean();
-    echo str_replace('<%%FOOTER%%>', $dFooter, $footerCode);
-}
-?>
