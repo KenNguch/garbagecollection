@@ -1,4 +1,5 @@
-<?php
+<
+    <!DOCTYPE html>
     <html>
     <head>
 
@@ -24,11 +25,42 @@
     <body>
     <div class="container">
         <?php
-        // hook: availability_header
+        function location_header($contentType, $memberInfo, &$args){
+            $header='';
+    
+            switch($contentType){
+                case 'tableview':
+                    $header='';
+                    break;
+    
+                case 'detailview':
+                    $header='';
+                    break;
+    
+                case 'tableview+detailview':
+                    $header='';
+                    break;
+    
+                case 'print-tableview':
+                    $header='';
+                    break;
+    
+                case 'print-detailview':
+                    $header='';
+                    break;
+    
+                case 'filters':
+                    $header='';
+                    break;
+            }
+    
+            return $header;
+        }
+        // hook: location_header
 	$headerCode='';
-	if(function_exists('availability_header')){
+	if(function_exists('location_header')){
 		$args=array();
-		$headerCode=availability_header($x->ContentType, getMemberInfo(), $args);
+		$headerCode=location_header($x->ContentType, getMemberInfo(), $args);
 	}  
 	if(!$headerCode){
 		include_once("$currDir/header.php"); 
@@ -53,30 +85,3 @@
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1bF3Ry-gVyKmSVse4s1zmfnyd4_9b3F8&callback=loadMap">
     </script>
     </html>
-// hook: customers_header
-	$headerCode='';
-	if(function_exists('customers_header')){
-		$args=array();
-		$headerCode=customers_header($x->ContentType, getMemberInfo(), $args);
-	}  
-	if(!$headerCode){
-		include_once("$currDir/header.php"); 
-	}else{
-		ob_start(); include_once("$currDir/header.php"); $dHeader=ob_get_contents(); ob_end_clean();
-		echo str_replace('<%%HEADER%%>', $dHeader, $headerCode);
-	}
-
-	echo $x->HTML;
-	// hook: customers_footer
-	$footerCode='';
-	if(function_exists('customers_footer')){
-		$args=array();
-		$footerCode=customers_footer($x->ContentType, getMemberInfo(), $args);
-	}  
-	if(!$footerCode){
-		include_once("$currDir/footer.php"); 
-	}else{
-		ob_start(); include_once("$currDir/footer.php"); $dFooter=ob_get_contents(); ob_end_clean();
-		echo str_replace('<%%FOOTER%%>', $dFooter, $footerCode);
-	}
-?>
