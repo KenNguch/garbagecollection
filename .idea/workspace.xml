@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3918ba13-afdb-410e-a117-158776965dad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/route-location/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/route-location/education.php" beforeDir="false" afterPath="$PROJECT_DIR$/route-location/education.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/route-location/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/route-location/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,8 +52,16 @@
       <option name="presentableId" value="Default" />
       <updated>1565099082992</updated>
       <workItem from="1565099088377" duration="9000" />
-      <workItem from="1565163065408" duration="560000" />
+      <workItem from="1565163065408" duration="1127000" />
     </task>
+    <task id="LOCAL-00001" summary="Included Header">
+      <created>1565163667323</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1565163667323</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -71,5 +77,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Included Header" />
+    <option name="LAST_COMMIT_MESSAGE" value="Included Header" />
   </component>
 </project>
