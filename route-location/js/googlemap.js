@@ -6,7 +6,7 @@ function loadMap() {
     map = new google.maps.Map(document.getElementById('map'), {
         zoom: 15,
         center: limuru,
-        mapTypeId: 'satellite',
+        mapTypeId: 'terrain',
         styles: [
             { elementType: 'geometry', stylers: [{ color: '#242f3e' }] },
             { elementType: 'labels.text.stroke', stylers: [{ color: '#242f3e' }] },
