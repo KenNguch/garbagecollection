@@ -6,7 +6,7 @@
 	<script type="text/javascript" src="js/googlemap.js"></script>
 	<style type="text/css">
 		.container {
-			height: 450px;
+			height: 600px;
 		}
 		#map {
 			width: 100%;
@@ -20,8 +20,7 @@
 </head>
 <body>
 	<div class="container">
-		<h1>Access Google Maps API in PHP</h1>
-		<?php 
+			<?php 
 			require 'education.php';
 			$edu = new education;
 			$coll = $edu->getCollegesBlankLatLng();
