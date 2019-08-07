@@ -8,7 +8,6 @@
         <script type="text/javascript" src="js/googlemap.js"></script>
         <style type="text/css">
             .container {
-                width: 100%; height: 100%;
             }
 
             #map {
