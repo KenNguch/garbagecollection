@@ -11,7 +11,7 @@
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>Garbage Garbage Kollectorz System  | <?php echo (isset($x->TableTitle) ? $x->TableTitle : ''); ?></title>
+		<title>Garbage Kollectorz System  | <?php echo (isset($x->TableTitle) ? $x->TableTitle : ''); ?></title>
 		<link id="browser_favicon" rel="shortcut icon" href="<?php echo PREPEND_PATH; ?>resources/images/appgini-icon.png">
 
 		<link rel="stylesheet" href="<?php echo PREPEND_PATH; ?>resources/initializr/css/paper.css">
