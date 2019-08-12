@@ -34,10 +34,11 @@
 		<div id="map"></div>
 	</div>
 	<button onclick="history.go(-1);">Forward </button>
-</body>
 <script 
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1bF3Ry-gVyKmSVse4s1zmfnyd4_9b3F8&callback=loadMap"async defer
 </script>
+</body>
+
 
 </html>
 
