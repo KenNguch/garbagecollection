@@ -2,7 +2,7 @@ var map;
 var geocoder;
 
 function loadMap() {
-    var limuru = { lat: -1.109350,lng: 36.643220 };
+    var limuru = { lat: -1.109350, lng: 36.643220 };
     map = new google.maps.Map(document.getElementById('map'), {
         zoom: 15,
         center: limuru,
@@ -99,10 +99,10 @@ function loadMap() {
     codeAddress(cdata);
 
     var allData = JSON.parse(document.getElementById('allData').innerHTML);
-    showAllColleges(allData)
+    showAlllocations(allData)
 }
 
-function showAllColleges(allData) {
+function showAlllocations(allData) {
     var infoWind = new google.maps.InfoWindow;
     Array.prototype.forEach.call(allData, function(data) {
         var content = document.createElement('div');
@@ -138,7 +138,7 @@ function codeAddress(cdata) {
                 points.id = data.id;
                 points.lat = map.getCenter().lat();
                 points.lng = map.getCenter().lng();
-                updateCollegeWithLatLng(points);
+                updateLocationsWithLatLng(points);
             } else {
                 alert('Geocode was not successful for the following reason: ' + status);
             }
@@ -146,7 +146,7 @@ function codeAddress(cdata) {
     });
 }
 
-function updateCollegeWithLatLng(points) {
+function updateLocationsWithLatLng(points) {
     $.ajax({
         url: "action.php",
         method: "post",

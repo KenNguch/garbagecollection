@@ -29,21 +29,21 @@
 			$this->conn = $conn->connect();
 		}
 
-		public function getCollegesBlankLatLng() {
+		public function getLocationssBlankLatLng() {
 			$sql = "SELECT * FROM $this->tableName WHERE lat IS NULL AND lng IS NULL";
 			$stmt = $this->conn->prepare($sql);
 			$stmt->execute();
 			return $stmt->fetchAll(PDO::FETCH_ASSOC);
 		}
 
-		public function getAllColleges() {
+		public function getAllLocationss() {
 			$sql = "SELECT * FROM $this->tableName";
 			$stmt = $this->conn->prepare($sql);
 			$stmt->execute();
 			return $stmt->fetchAll(PDO::FETCH_ASSOC);
 		}
 
-		public function updateCollegesWithLatLng() {
+		public function updateLocationssWithLatLng() {
 			$sql = "UPDATE $this->tableName SET lat = :lat, lng = :lng WHERE id = :id";
 			$stmt = $this->conn->prepare($sql);
 			$stmt->bindParam(':lat', $this->lat);

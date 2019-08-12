@@ -13,12 +13,11 @@
                             </a>
 
 
-
                     <div class="navbar-collapse collapse">
                         <div  class="menu">
 						<center>
                             <ul class="nav nav-tabs" role="tablist">
-                                <li role="presentation"><a href="http://garbagecollectionsystem.herokuapp.com" class="active">Dashboard</a></li>
+                                <li role="presentation"><a href="http://garbagecollectionsystem.herokuapp.com/index.php" class="active">Dashboard</a></li>
                                 <li role="presentation"><a href="http://garbagecollectionsystem.herokuapp.com/customers_view.php">Customers</a></li>
                                 <li role="presentation"><a href="http://garbagecollectionsystem.herokuapp.com/bookings_view.php">Bookings</a></li>
                                 <li role="presentation"><a href="http://garbagecollectionsystem.herokuapp.com/trucks_view.php">Truck</a></li>
