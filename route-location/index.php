@@ -5,7 +5,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 
-	nav class="navbar navbar-default navbar-static-top" role="navigation">
+	<nav class="navbar navbar-default navbar-static-top" role="navigation">
             <div class="navigation">
                 <div class="container">
                     <div class="navbar-header">
