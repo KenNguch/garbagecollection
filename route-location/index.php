@@ -18,6 +18,26 @@
 		}
 	</style>
 </head>
+	<body>
+	<button onclick="history.go(-1);">Back </button>
+	<div class="container">
+		<?php 
+			require 'education.php';
+			$edu = new education;
+			$coll = $edu->getlocationsBlankLatLng();
+			$coll = json_encode($coll, true);
+			echo '<div id="data">' . $coll . '</div>';
+			$allData = $edu->getAlllocations();
+			$allData = json_encode($allData, true);
+			echo '<div id="allData">' . $allData . '</div>';			
+		 ?>
+		<div id="map"></div>
+	</div>
+	<button onclick="history.go(-1);">Forward </button>
+</body>
+<script 
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1bF3Ry-gVyKmSVse4s1zmfnyd4_9b3F8&callback=loadMap"async defer
+</script>
 
 </html>
 
