@@ -15,7 +15,8 @@
 
 
                     <div class="navbar-collapse collapse">
-                        <div align = "center" class="menu">
+                        <div  class="menu">
+						<center>
                             <ul class="nav nav-tabs" role="tablist">
                                 <li role="presentation"><a href="http://garbagecollectionsystem.herokuapp.com" class="active">Dashboard</a></li>
                                 <li role="presentation"><a href="http://garbagecollectionsystem.herokuapp.com/customers_view.php">Customers</a></li>
@@ -25,7 +26,8 @@
 								<li role="presentation"><a href="http://garbagecollectionsystem.herokuapp.com/availability_view.php">Availability</a></li>
 								<li role="presentation"><a href="http://garbagecollectionsystem.herokuapp.com/routes_view.php">Routes</a></li>
 
-					                            </ul>
+					       </ul>
+						</center>
                         </div>
                     </div>
                 </div>
