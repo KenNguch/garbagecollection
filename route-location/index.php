@@ -17,8 +17,8 @@
                             <span class="icon-bar"></span>
                         </button>
                         <div class="navbar-brand">
-                            <a href="home.html">
-                                <h1><span>GARBAGE </span>KOLLECTORS`s</h1>
+                            <a href="http://garbagecollectionsystem.herokuapp.com">
+                                <h1><span>GARBAGE </span>KOLLECTORZ</h1>
                             </a>
                         </div>
                     </div>
@@ -26,14 +26,13 @@
                     <div class="navbar-collapse collapse">
                         <div class="menu">
                             <ul class="nav nav-tabs" role="tablist">
-                                <li role="presentation"><a href="http://garbagecollectionsystem.herokuapp.com" class="active">Dashboart</a></li>
+                                <li role="presentation"><a href="http://garbagecollectionsystem.herokuapp.com" class="active">Dashboard</a></li>
                                 <li role="presentation"><a href="http://garbagecollectionsystem.herokuapp.com/customers_view.php">Customers</a></li>
                                 <li role="presentation"><a href="http://garbagecollectionsystem.herokuapp.com/bookings_view.php">Bookings</a></li>
                                 <li role="presentation"><a href="http://garbagecollectionsystem.herokuapp.com/trucks_view.php">Truck</a></li>
                                 <li role="presentation"><a href="http://garbagecollectionsystem.herokuapp.com/slots_view.php">Slots</a></li>
 								<li role="presentation"><a href="http://garbagecollectionsystem.herokuapp.com/availability_view.php">Availability</a></li>
 								<li role="presentation"><a href="http://garbagecollectionsystem.herokuapp.com/routes_view.php">Routes</a></li>
-								<li role="presentation"><a href="http://garbagecollectionsystem.herokuapp.com/route-location/index.php">Pick Up Areas</a></li>
 
 
 
