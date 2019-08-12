@@ -8,7 +8,7 @@
 	<nav class="navbar navbar-default navbar-static-top" role="navigation">
             <div class="navigation">
                 <div class="container">
-                    <div class="navbar-header">
+                    
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                             data-target=".navbar-collapse.collapse">
                             <span class="sr-only">Toggle navigation</span>
@@ -20,7 +20,7 @@
                                 <h3 align="left" ><span>GARBAGE </span>KOLLECTORZ</h3>
                             </a>
 
-                    </div>
+                    
 
                     <div class="navbar-collapse collapse">
                         <div class="menu">
