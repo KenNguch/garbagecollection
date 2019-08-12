@@ -16,11 +16,10 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <div class="navbar-brand">
                             <a href="http://garbagecollectionsystem.herokuapp.com">
-                                <h3><span>GARBAGE </span>KOLLECTORZ</h3>
+                                <h3 align="left" ><span>GARBAGE </span>KOLLECTORZ</h3>
                             </a>
-                        </div>
+
                     </div>
 
                     <div class="navbar-collapse collapse">
