@@ -19,9 +19,6 @@
 	</style>
 </head>
 <body>
-<div> 
-<button onclick="history.go(-1);">Back </button>
-</div>
 	<div class="container">
 		<?php 
 			require 'education.php';
@@ -35,9 +32,7 @@
 		 ?>
 		<div id="map"></div>
 	</div>
-	<div>
-	<button onclick="history.go(1);">Forward </button>
-	</div>
+	
 
 </body>
 <script async defer
