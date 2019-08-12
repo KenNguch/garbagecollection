@@ -18,7 +18,7 @@
                         </button>
                         <div class="navbar-brand">
                             <a href="http://garbagecollectionsystem.herokuapp.com">
-                                <h1><span>GARBAGE </span>KOLLECTORZ</h1>
+                                <h3><span>GARBAGE </span>KOLLECTORZ</h3>
                             </a>
                         </div>
                     </div>
