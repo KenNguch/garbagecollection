@@ -8,22 +8,14 @@
 	<nav class="navbar navbar-default navbar-static-top" role="navigation">
             <div class="navigation">
                 <div class="container">
-                    
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                            data-target=".navbar-collapse.collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
                             <a href="http://garbagecollectionsystem.herokuapp.com">
-                                <h3 align="left" ><span>GARBAGE </span>KOLLECTORZ</h3>
+                                <h3 align="center" ><span>GARBAGE </span>KOLLECTORZ</h3>
                             </a>
 
-                    
+
 
                     <div class="navbar-collapse collapse">
-                        <div class="menu">
+                        <div align = "center" class="menu">
                             <ul class="nav nav-tabs" role="tablist">
                                 <li role="presentation"><a href="http://garbagecollectionsystem.herokuapp.com" class="active">Dashboard</a></li>
                                 <li role="presentation"><a href="http://garbagecollectionsystem.herokuapp.com/customers_view.php">Customers</a></li>
@@ -33,9 +25,7 @@
 								<li role="presentation"><a href="http://garbagecollectionsystem.herokuapp.com/availability_view.php">Availability</a></li>
 								<li role="presentation"><a href="http://garbagecollectionsystem.herokuapp.com/routes_view.php">Routes</a></li>
 
-
-
-                            </ul>
+					                            </ul>
                         </div>
                     </div>
                 </div>
