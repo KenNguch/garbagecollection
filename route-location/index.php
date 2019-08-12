@@ -19,25 +19,26 @@
 	</style>
 </head>
 <body>
-<button onclick="history.go(-1);">Back </button>
+<button onclick="history.go(1);">Forward </button>
 	<div class="container">
 		<?php 
 			require 'education.php';
 			$edu = new education;
-			$coll = $edu->getCollegesBlankLatLng();
+			$coll = $edu->getlocationsBlankLatLng();
 			$coll = json_encode($coll, true);
 			echo '<div id="data">' . $coll . '</div>';
-			$allData = $edu->getAllColleges();
+			$allData = $edu->getAlllocations();
 			$allData = json_encode($allData, true);
 			echo '<div id="allData">' . $allData . '</div>';			
 		 ?>
 		<div id="map"></div>
 	</div>
-	<button onclick="history.go(1);">Forward </button>
+	<button onclick="history.go(-1);">Back </button>
+
 
 </body>
-<button onclick="history.go(-1);">Back </button>
 <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1bF3Ry-gVyKmSVse4s1zmfnyd4_9b3F8&callback=loadMap">
 </script>
 </html>
+
