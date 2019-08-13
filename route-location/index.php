@@ -6,7 +6,7 @@
 	<script type="text/javascript" src="js/googlemap.js"></script>
 	<style type="text/css">
 		.container {
-			height: 450px;
+			height: 700px;
 		}
 		#map {
 			width: 100%;
@@ -18,19 +18,14 @@
 		}
 	</style>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-
-	<nav class="navbar navbar-default navbar-static-top" role="navigation">
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
             <div class="navigation">
                 <div class="container">
-                            <a href="http://garbagecollectionsystem.herokuapp.com">
+                            <a href="http://garbagecollectionsystem.herokuapp.com/index.php">
                                 <h3 align="center" ><span>GARBAGE </span>KOLLECTORZ</h3>
                             </a>
-
-
                     <div class="navbar-collapse collapse">
                         <div  class="menu">
-						
                             <ul class="nav nav-tabs" role="tablist">
                                 <li role="presentation"><a href="http://garbagecollectionsystem.herokuapp.com/index.php" class="active">Dashboard</a></li>
                                 <li role="presentation"><a href="http://garbagecollectionsystem.herokuapp.com/customers_view.php">Customers</a></li>
@@ -50,16 +45,16 @@
 <body>
 	<div class="container">
 		<?php
-			require 'education.php';
-			$edu = new education;
-			$coll = $edu->getCollegesBlankLatLng();
-			$coll = json_encode($coll, true);
-			echo '<div id="data">' . $coll . '</div>';
+require 'education.php';
+$edu = new education;
+$coll = $edu->getCollegesBlankLatLng();
+$coll = json_encode($coll, true);
+echo '<div id="data">' . $coll . '</div>';
 
-			$allData = $edu->getAllColleges();
-			$allData = json_encode($allData, true);
-			echo '<div id="allData">' . $allData . '</div>';
-		 ?>
+$allData = $edu->getAllColleges();
+$allData = json_encode($allData, true);
+echo '<div id="allData">' . $allData . '</div>';
+?>
 		<div id="map"></div>
 	</div>
 </body>
