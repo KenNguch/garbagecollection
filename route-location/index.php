@@ -16,6 +16,10 @@
 		#data, #allData {
 			display: none;
 		}
+		ul {
+    width: 70%;
+    margin: auto;
+}
 	</style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
             <div class="navigation">
