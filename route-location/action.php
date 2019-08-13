@@ -4,7 +4,7 @@
 	$edu->setId($_REQUEST['id']);
 	$edu->setLat($_REQUEST['lat']);
 	$edu->setLng($_REQUEST['lng']);
-	$status = $edu->updateLocationssWithLatLng();
+	$status = $edu->updateCollegesWithLatLng();
 	if($status == true) {
 		echo "Updated...";
 	} else {

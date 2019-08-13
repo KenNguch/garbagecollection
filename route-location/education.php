@@ -1,10 +1,4 @@
-<?php
-	error_reporting(E_ERROR | E_WARNING | E_PARSE);
-	$currDir = dirname(__FILE__);
-	include("{$currDir}/defaultLang.php");
-	include("{$currDir}/language.php");
-	include("{$currDir}/lib.php");
-	include("{$currDir}/header-user.php");
+<?php 
 	
 	class education	{
 		private $id;
@@ -29,21 +23,21 @@
 			$this->conn = $conn->connect();
 		}
 
-		public function getLocationssBlankLatLng() {
+		public function getCollegesBlankLatLng() {
 			$sql = "SELECT * FROM $this->tableName WHERE lat IS NULL AND lng IS NULL";
 			$stmt = $this->conn->prepare($sql);
 			$stmt->execute();
 			return $stmt->fetchAll(PDO::FETCH_ASSOC);
 		}
 
-		public function getAllLocationss() {
+		public function getAllColleges() {
 			$sql = "SELECT * FROM $this->tableName";
 			$stmt = $this->conn->prepare($sql);
 			$stmt->execute();
 			return $stmt->fetchAll(PDO::FETCH_ASSOC);
 		}
 
-		public function updateLocationssWithLatLng() {
+		public function updateCollegesWithLatLng() {
 			$sql = "UPDATE $this->tableName SET lat = :lat, lng = :lng WHERE id = :id";
 			$stmt = $this->conn->prepare($sql);
 			$stmt->bindParam(':lat', $this->lat);
