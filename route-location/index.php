@@ -30,7 +30,7 @@
 
                     <div class="navbar-collapse collapse">
                         <div  class="menu">
-						<center>
+						
                             <ul class="nav nav-tabs" role="tablist">
                                 <li role="presentation"><a href="http://garbagecollectionsystem.herokuapp.com/index.php" class="active">Dashboard</a></li>
                                 <li role="presentation"><a href="http://garbagecollectionsystem.herokuapp.com/customers_view.php">Customers</a></li>
@@ -41,7 +41,6 @@
 								<li role="presentation"><a href="http://garbagecollectionsystem.herokuapp.com/routes_view.php">Routes</a></li>
 
 					       </ul>
-						</center>
                         </div>
                     </div>
                 </div>
@@ -50,8 +49,7 @@
 </head>
 <body>
 	<div class="container">
-		<center><h1>Access Google Maps API in PHP</h1></center>
-		<?php 
+		<?php
 			require 'education.php';
 			$edu = new education;
 			$coll = $edu->getCollegesBlankLatLng();
@@ -60,7 +58,7 @@
 
 			$allData = $edu->getAllColleges();
 			$allData = json_encode($allData, true);
-			echo '<div id="allData">' . $allData . '</div>';			
+			echo '<div id="allData">' . $allData . '</div>';
 		 ?>
 		<div id="map"></div>
 	</div>
