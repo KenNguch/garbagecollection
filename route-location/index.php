@@ -6,7 +6,7 @@
 	<script type="text/javascript" src="js/googlemap.js"></script>
 	<style type="text/css">
 		.container {
-			height: 0px;
+			height: 700px;
 		}
 		#map {
 			width: 100%;
