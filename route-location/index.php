@@ -17,11 +17,10 @@
 			display: none;
 		}
 	</style>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
             <div class="navigation">
-                <div class="container">
-                            <a href="http://garbagecollectionsystem.herokuapp.com/index.php">
+                <div>
+				                            <a href="http://garbagecollectionsystem.herokuapp.com/index.php">
                                 <h3 align="center" ><span>GARBAGE </span>KOLLECTORZ</h3>
                             </a>
                     <div class="navbar-collapse collapse">
@@ -34,7 +33,6 @@
                                 <li role="presentation"><a href="http://garbagecollectionsystem.herokuapp.com/slots_view.php">Slots</a></li>
 								<li role="presentation"><a href="http://garbagecollectionsystem.herokuapp.com/availability_view.php">Availability</a></li>
 								<li role="presentation"><a href="http://garbagecollectionsystem.herokuapp.com/routes_view.php">Routes</a></li>
-
 					       </ul>
                         </div>
                     </div>
