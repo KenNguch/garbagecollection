@@ -3,8 +3,8 @@ var geocoder;
 
 function loadMap() {
     var pune = {
-        lat: -1.106201,
-        lng: 36.626874
+        lat: -1.108515,
+        lng:  36.642188
     };
     map = new google.maps.Map(document.getElementById('map'), {
         zoom: 15,
